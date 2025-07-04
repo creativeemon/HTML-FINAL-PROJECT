@@ -1,11 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML-FINAL-PROJECT</title>
+    <link rel="shortcut icon" href="./images/developer.png" type="image/x-icon">
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        form div {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color:#fff ;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #fff;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <!-- Header section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main section -->
+    <main>
+        <!-- hero section -->
+        <section id="home">
+            <h1>Welcome to my Portfolio</h1>
+            <p>Hello! I am Sahariar emon Web developer</p>
+            <div>
+                <img style="width: 200px; height: 200px;" src="./images/sahariar.jpg" alt="Saharir emon profile img">
+            </div>
+        </section>
+        <!-- About section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <article>
+                <h3>Sahariar Web developer</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, officiis.</p>
+                <blockquote>"Lorem ipsum dolor sit amet consectetur, adipisicing elit." - Copy to</blockquote>
+            </article>
+        </section>
+        <!-- Project section -->
+        <section id="services">
+            <h2>My project</h2>
+            <table>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Project Description</th>
+                    <th>Project Link</th>
+                </tr>
+                <tr>
+                    <td>Project 1</td>
+                    <td>Lorem ipsum dolor sit amet consectetur.</td>
+                    <td>
+                        <a href="#" target="_blank">View_Project</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Project 2</td>
+                    <td>Lorem ipsum dolor sit amet consectetur.</td>
+                    <td>
+                        <a href="#" target="_blank">View_Project</a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <!-- Contact section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="messages">Message</label>
+                    <textarea name="messages" id="messages" rows="4"></textarea>
+                </div>
+
+                <input type="button" value="send message">
+
+            </form>
+
+        </section>
+    </main>
+
+    <!-- footer section -->
+    <footer>
+        <p>&copy;2025 Sahariar. all right reserved</p>
+        <p>
+            Contact With me on
+            <a href="https://github.com/creativeemon/HTML-FINAL-PROJECT">Git-Hub</a> | <a href="#" target="_blank">
+                LinkedIn</a>
+        </p>
+    </footer>
 </body>
+
 </html>
